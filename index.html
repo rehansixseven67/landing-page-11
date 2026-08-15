@@ -10,15 +10,15 @@
 <!--  -->
 
 <body class="bg-slate-950 text-white">
-  <!-- Navbar -->
+  <!-- navbar -->
   <nav class="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-slate-950/80 backdrop-blur-lg">
     <div class="mx-auto max-w-7xl px-6">
       <div class="flex items-center justify-between py-4">
 
-        <!-- Logo  -->
+        <!-- logo  -->
         <div class="flex items-center gap-2">
           <a href="#home" class="flex items-center gap-2">
-            <img src="img/smp-negeri-11-tangerang.jpg" class="w-10 h-10 object-contain" alt="Logo">
+            <img src="img/smp-negeri-11-tangerang.jpg" class="w-10 h-10 object-contain rounded-full" alt="Logo">
 
             <span class="text-2xl font-bold tracking-tight">
               SMP NEGERI 11 TANGERANG<span class="text-blue-500">.</span>
@@ -26,7 +26,7 @@
           </a>
         </div>
 
-        <!-- Desktop Menu -->
+        <!-- tampilan laptop -->
         <div class="flex items-center gap-10">
           <div class="hidden items-center gap-8 md:flex">
             <a href="#home" class="text-base text-slate-300 transition hover:text-white">
@@ -37,25 +37,24 @@
               About
             </a>
 
-            <a href="#features" class="text-base text-slate-300 transition hover:text-white">
+            <a href="#ekskul" class="text-base text-slate-300 transition hover:text-white">
               Ekskul
             </a>
 
-            <a href="#about" class="text-base text-slate-300 transition hover:text-white">
+            <a href="#contact" class="text-base text-slate-300 transition hover:text-white">
               Contact Us
             </a>
 
-
           </div>
         </div>
-        <!-- Desktop Button -->
-        <!-- <a href="#start"
+        <a href="#start"
           class="hidden rounded-full bg-blue-600 px-5 py-2.5 text-sm font-semibold transition hover:bg-blue-500 md:block">
           DAFTAR SEKARANG YUK!
-        </a> -->
+        </a>
+        <div class=""></div>
 
 
-        <!-- Mobile Hamburger -->
+        <!-- garis tiga -->
         <button id="menu-button"
           class="relative flex h-10 w-10 items-center justify-center transition-transform duration-300 md:hidden">
           <span class="absolute -translate-y-2 h-0.5 w-6 bg-white"></span>
@@ -64,7 +63,7 @@
         </button>
       </div>
 
-      <!-- Mobile Menu -->
+      <!-- tampilan hp -->
       <div id="mobile-menu" class="max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out md:hidden">
 
         <div class="flex flex-col gap-5">
@@ -77,10 +76,9 @@
             About
           </a>
 
-          <a href="#features" class="text-base text-slate-300 transition hover:text-white">
+          <a href="#ekskul" class="text-base text-slate-300 transition hover:text-white">
             Ekskul
           </a>
-
 
           <div class=""></div>
         </div>
@@ -100,13 +98,13 @@
 
     menuButton.addEventListener("click", () => {
 
-      // Menu
+      // 
       mobileMenu.classList.toggle("max-h-0");
       mobileMenu.classList.toggle("max-h-96");
       mobileMenu.classList.toggle("opacity-0");
       mobileMenu.classList.toggle("opacity-100");
 
-      // Hamburger → |||
+      // garis tiga tapi berdiri → |||
       menuButton.classList.toggle("rotate-90");
 
       // 
@@ -114,208 +112,272 @@
     });
   </script>
 
-  <!-- Hero -->
+  <!-- hero -->
   <section id="home" class="relative overflow-hidden pt-32 transition-transform duration-500 ease-in-out">
 
-    <!-- Background glow -->
-    <div class="absolute left-1/2 top-20 -z-10 h-96 w-96 -translate-x-1/2 rounded-full bg-blue-600/20 blur-3xl"></div>
+    <!-- Background -->
+    <img src="img/smp-negeri-11-tangerang.jpg"
+      class="absolute left-1/2 top-20 -z-10 h-96 w-96 -translate-x-1/2 rounded-full bg-blue-600/20"></img>
 
     <div class="mx-auto grid max-w-7xl items-center gap-20 px-6 py-20 md:grid-cols-2">
       <!-- KIRI -->
-      <div class="z-10">
+      <div
+        class="group rounded-2xl border border-white/10 bg-white/5 p-8 transition hover:-translate-y-1 hover:border-blue-500/40 backdrop-blur-lg">
+        <div class="z-10">
 
-        <p class="text-lg font-semibold text-blue-500">
-          Welcome
-        </p>
+          <p class="text-lg font-semibold text-blue-500">
+            Selamat Datang di Website Kami!
+          </p>
 
-        <h1 class="mt-4 max-w-xl text-5xl font-bold leading-tight tracking-tight text-white md:text-6xl">
-          Best Learning
-          <br>
-          Opportunities
-        </h1>
+          <h1 class="mt-4 max-w-xl text-4xl font-bold leading-tight tracking-tight text-white md:text-6xl">
+            Sekolah Favorit
+            <br>
+            se-Tangerang!
+          </h1>
 
-        <p class="mt-6 max-w-md leading-7 text-slate-400">
-          Our goal is to make online education work for everyone.
-          Learn new skills and discover your potential with us.
-        </p>
+          <p class="mt-6 max-w-md leading-7 text-slate-400">
+            SMP Negeri 11 Tangerang adalah sekolah menengah pertama yang terletak di Kota Tangerang, Indonesia. Sekolah
+            ini dikenal karena komitmennya terhadap pendidikan berkualitas dan pengembangan karakter siswa. Dengan
+            fasilitas modern dan tenaga pengajar yang berpengalaman, SMP Negeri 11 Tangerang menyediakan lingkungan
+            belajar yang mendukung pertumbuhan akademik dan pribadi siswa.
+          </p>
 
-        <div class="mt-8 flex flex-wrap gap-4">
+          <div class="mt-8 flex flex-wrap gap-4">
 
-          <a href="#about"
-            class="rounded-lg bg-blue-600 px-6 py-3 font-semibold text-white transition hover:bg-blue-500">
-            About Us
-          </a>
+            <a href="#about"
+              class="rounded-lg bg-blue-600 px-6 py-3 font-semibold text-white transition hover:bg-blue-500">
+              Tentang Kami
+            </a>
 
-          <a href="#contact"
-            class="rounded-lg border border-blue-500 px-6 py-3 font-semibold text-blue-400 transition hover:bg-blue-500 hover:text-white">
-            Contact Us
-          </a>
+            <a href="#contact"
+              class="rounded-lg border border-blue-500 px-6 py-3 font-semibold text-blue-400 transition hover:bg-blue-500 hover:text-white">
+              Hubungi Kami
+            </a>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- konten kanan -->
+      <div
+        class="group rounded-2xl border border-white/10 bg-white/5 p-6 transition hover:-translate-y-1 hover:border-blue-500/40 backdrop-blur-lg">
+        <div class="relative flex justify-center md:justify-end">
+
+          <!-- foto siswa -->
+          <img src="img/portrait.png" alt="orang" class="relative z-10 w-full max-w-md object-contain">
 
         </div>
-
-      </div>
-
-      <!-- KANAN -->
-      <div class="relative flex justify-center md:justify-end">
-
-        <!-- Gambar siswa -->
-        <img src="img/portrait.png" alt="orang" class="relative z-10 w-full max-w-md object-contain">
-
-      </div>
-
+      </div> <!-- penutup blur -->
     </div>
   </section>
 
 
-  <!-- Features -->
-  <section id="features" class="border-t border-white/10 bg-slate-900/50">
+  <!-- tentang -->
+  <section id="about" class="border-t border-white/10 bg-slate-900/50">
 
     <div class="mx-auto max-w-7xl px-6 py-24">
 
       <div class="mx-auto max-w-2xl text-center">
-        <p class="font-semibold text-blue-400">FEATURES</p>
+        <p class="font-semibold text-blue-400">ABOUT</p>
 
         <h2 class="mt-3 text-4xl font-bold tracking-tight sm:text-5xl">
-          Everything you need.
+          TENTANG SEKOLAH KAMI
         </h2>
 
         <p class="mt-5 text-slate-400">
-          Simple, powerful, and designed to help you turn your ideas
-          into reality.
+          SMP Negeri 11 Tangerang adalah sekolah menengah pertama yang terletak di Kota Tangerang, Indonesia. Sekolah
+          ini dikenal karena komitmennya terhadap pendidikan berkualitas dan pengembangan karakter siswa. Dengan
+          fasilitas modern dan tenaga pengajar yang berpengalaman, SMP Negeri 11 Tangerang menyediakan lingkungan
+          belajar yang mendukung pertumbuhan akademik dan pribadi siswa.
         </p>
       </div>
 
 
-      <div class="mt-16 grid gap-6 md:grid-cols-3">
+      <!-- Carousel -->
+      <div class="mt-16 relative">
+        <!-- Left Arrow -->
+        <button id="carousel-prev"
+          class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-16 z-10 h-10 w-10 flex items-center justify-center bg-blue-600 hover:bg-blue-500 rounded-full transition duration-300">
+          ←
+        </button>
 
-        <!-- Feature 1 -->
-        <div
-          class="group rounded-2xl border border-white/10 bg-white/5 p-8 transition hover:-translate-y-1 hover:border-blue-500/40">
-
-          <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-500/10 text-2xl">
-            ⚡
+        <!-- Carousel Container -->
+        <div id="carousel-container" class="relative overflow-hidden">
+          <!-- Fade Gradient Left -->
+          <div
+            class="absolute left-0 top-0 w-32 h-full bg-gradient-to-r from-slate-950/90 to-transparent z-20 pointer-events-none">
           </div>
 
-          <h3 class="mt-6 text-xl font-semibold">
-            Lightning Fast
-          </h3>
-
-          <p class="mt-3 leading-7 text-slate-400">
-            Optimized for speed so your projects load quickly
-            and feel incredibly smooth.
-          </p>
-
-        </div>
-
-
-        <!-- Feature 2 -->
-        <div
-          class="group rounded-2xl border border-white/10 bg-white/5 p-8 transition hover:-translate-y-1 hover:border-blue-500/40">
-
-          <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-purple-500/10 text-2xl">
-            🎨
+          <!-- Fade Gradient Right -->
+          <div
+            class="absolute right-0 top-0 w-32 h-full bg-gradient-to-l from-slate-950/90 to-transparent z-20 pointer-events-none">
           </div>
 
-          <h3 class="mt-6 text-xl font-semibold">
-            Beautiful Design
-          </h3>
+          <!-- Cards Wrapper -->
+          <div id="carousel-wrapper" class="flex gap-6 transition-transform duration-500 ease-out">
 
-          <p class="mt-3 leading-7 text-slate-400">
-            Create modern interfaces with clean layouts and
-            beautiful responsive components.
-          </p>
+            <!-- Card 1 -->
+            <div
+              class="carousel-card flex-shrink-0 w-full md:w-80 group rounded-2xl border border-white/10 bg-white/5 p-8 transition hover:-translate-y-1 hover:border-blue-500/40">
+              <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-500/10 text-2xl">
+                📍
+              </div>
+              <h3 class="mt-6 text-xl font-semibold">
+                Lokasi
+              </h3>
+              <p class="mt-3 leading-7 text-slate-400">
+                Kota Tangerang <br>
+                Kec. Larangan, Kode Pos: 15154
+              </p>
+            </div>
 
-        </div>
+            <!-- Card 2 -->
+            <div
+              class="carousel-card flex-shrink-0 w-full md:w-80 group rounded-2xl border border-white/10 bg-white/5 p-8 transition hover:-translate-y-1 hover:border-blue-500/40">
+              <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-purple-500/10 text-2xl">
+                🛣
+              </div>
+              <h3 class="mt-6 text-xl font-semibold">
+                Alamat
+              </h3>
+              <p class="mt-3 leading-7 text-slate-400">
+                Jl. Inpres 18 Larangan Selatan <br>
+                RT 3 / RW 8, Larangan Selatan
+              </p>
+            </div>
 
+            <!-- Card 3 -->
+            <div
+              class="carousel-card flex-shrink-0 w-full md:w-80 group rounded-2xl border border-white/10 bg-white/5 p-8 transition hover:-translate-y-1 hover:border-blue-500/40">
+              <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-green-500/10 text-2xl">
+                🏆
+              </div>
+              <h3 class="mt-6 text-xl font-semibold">
+                Akreditas
+              </h3>
+              <p class="mt-3 leading-7 text-slate-400">
+                Sekolah Terakreditasi A, dengan prestasi akademik dan non-akademik yang membanggakan.
+              </p>
+            </div>
 
-        <!-- Feature 3 -->
-        <div
-          class="group rounded-2xl border border-white/10 bg-white/5 p-8 transition hover:-translate-y-1 hover:border-blue-500/40">
+            <!-- Card 4 -->
+            <div
+              class="carousel-card flex-shrink-0 w-full md:w-80 group rounded-2xl border border-white/10 bg-white/5 p-8 transition hover:-translate-y-1 hover:border-blue-500/40">
+              <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-orange-500/10 text-2xl">
+                🏞️
+              </div>
+              <h3 class="mt-6 text-xl font-semibold">
+                Luas Tanah
+              </h3>
+              <p class="mt-3 leading-7 text-slate-400">
+                Total luas tanah: 5.022 m^2 <br>
+                Dengan fasilitas lengkap dan modern
+              </p>
+            </div>
 
-          <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-green-500/10 text-2xl">
-            🔒
+            <!-- Card 5 -->
+            <div
+              class="carousel-card flex-shrink-0 w-full md:w-80 group rounded-2xl border border-white/10 bg-white/5 p-8 transition hover:-translate-y-1 hover:border-blue-500/40">
+              <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-red-500/10 text-2xl">
+                📋
+              </div>
+              <h3 class="mt-6 text-xl font-semibold">
+                NPSN
+              </h3>
+              <p class="mt-3 leading-7 text-slate-400">
+                Nomor Pokok Sekolah Nasional <br>
+                20606740
+              </p>
+            </div>
+
+            <div
+              class="carousel-card flex-shrink-0 w-full md:w-80 group rounded-2xl border border-white/10 bg-white/5 p-8 transition hover:-translate-y-1 hover:border-blue-500/40">
+              <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-500/10 text-2xl">
+                🕖
+              </div>
+              <h3 class="mt-6 text-xl font-semibold">
+                Bel Masuk & Pulang
+              </h3>
+              <p class="mt-3 leading-7 text-slate-400">
+                Bel masuk: 07:00 WIB <br>
+                Bel pulang: 15:00 WIB
+              </p>
+            </div>
+
           </div>
-
-          <h3 class="mt-6 text-xl font-semibold">
-            Secure
-          </h3>
-
-          <p class="mt-3 leading-7 text-slate-400">
-            Built with modern standards to keep your application
-            reliable and secure.
-          </p>
-
         </div>
 
+        <!-- Right Arrow -->
+        <button id="carousel-next"
+          class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-16 z-10 h-10 w-10 flex items-center justify-center bg-blue-600 hover:bg-blue-500 rounded-full transition duration-300">
+          →
+        </button>
       </div>
 
     </div>
   </section>
 
 
-  <!-- About -->
-  <section id="about">
+  <!-- ekskul -->
+  <section id="ekskul">
 
     <div class="mx-auto max-w-7xl px-6 py-24">
 
       <div class="grid items-center gap-16 md:grid-cols-2">
 
+        <!-- KIRI: Ekskul Info (Berubah) -->
         <div>
-          <p class="font-semibold text-blue-400">WHY NOVA?</p>
+          <p class="font-semibold text-blue-400">Ekskul</p>
 
-          <h2 class="mt-3 text-4xl font-bold tracking-tight sm:text-5xl">
-            Turn your ideas into reality.
+          <h2 id="info-title" class="mt-3 text-4xl font-bold tracking-tight sm:text-5xl">
+            Ekstrakurikuler Basket
           </h2>
 
-          <p class="mt-6 leading-8 text-slate-400">
-            We believe great products shouldn't require complicated
-            tools. NOVA gives you everything you need to build,
-            launch, and grow your next project.
+          <p id="info-desc" class="mt-6 leading-8 text-slate-400">
+            Ekstrakurikuler Basket di SMP Negeri 11 Tangerang adalah program yang dirancang untuk mengembangkan
+            keterampilan bermain basket siswa.
           </p>
 
           <div class="mt-8 space-y-4">
-
-            <div class="flex items-center gap-3">
-              <span class="text-green-400">✓</span>
-              <span class="text-slate-300">Easy to use</span>
+            <p class="font-semibold text-blue-400">Prestasi:</p>
+            <div id="info-achievements" class="space-y-3">
+              <div class="flex items-center gap-3">
+                <span class="text-green-400">🥇</span>
+                <span class="text-slate-300">Prestasi tingkat kabupaten</span>
+              </div>
             </div>
-
-            <div class="flex items-center gap-3">
-              <span class="text-green-400">✓</span>
-              <span class="text-slate-300">Fully responsive</span>
-            </div>
-
-            <div class="flex items-center gap-3">
-              <span class="text-green-400">✓</span>
-              <span class="text-slate-300">Modern technology</span>
-            </div>
-
           </div>
         </div>
 
+        <!-- KANAN: Ekskul Carousel (Foto + Nama) -->
+        <div class="relative">
+          <!-- Left Arrow -->
+          <button id="ekskul-prev"
+            class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 z-10 h-10 w-10 flex items-center justify-center bg-blue-600 hover:bg-blue-500 rounded-full transition duration-300">
+            ←
+          </button>
 
-        <div class="rounded-3xl border border-white/10 bg-gradient-to-br from-blue-500/20 to-purple-500/10 p-8">
+          <!-- Ekskul Card Container -->
+          <div id="ekskul-container" class="rounded-2xl border border-white/10 bg-white/5 overflow-hidden p-6">
+            <!-- Nama Ekskul -->
+            <h3 id="ekskul-title" class="text-2xl font-bold text-white text-center">🏀 Basket</h3>
 
-          <div class="rounded-2xl border border-white/10 bg-slate-950/80 p-8">
+            <!-- Foto Ekskul -->
+            <img id="ekskul-image" src="img/placeholder-basket.jpg" alt="Ekskul"
+              class="w-full h-80 object-cover rounded-lg mt-6">
 
-            <p class="text-sm text-slate-400">
-              Your next project
-            </p>
-
-            <p class="mt-2 text-4xl font-bold">
-              Starts today.
-            </p>
-
-            <div class="mt-8 h-2 overflow-hidden rounded-full bg-white/10">
-              <div class="h-full w-3/4 rounded-full bg-blue-500"></div>
+            <!-- Progress Bar -->
+            <div class="w-full bg-slate-700 h-1 rounded-full mt-6 overflow-hidden">
+              <div id="ekskul-progress" class="h-full bg-blue-500 transition-all duration-300" style="width: 16.67%">
+              </div>
             </div>
-
-            <p class="mt-3 text-sm text-slate-500">
-              75% ready to launch
-            </p>
-
           </div>
 
+          <!-- Right Arrow -->
+          <button id="ekskul-next"
+            class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 z-10 h-10 w-10 flex items-center justify-center bg-blue-600 hover:bg-blue-500 rounded-full transition duration-300">
+            →
+          </button>
         </div>
 
       </div>
@@ -324,24 +386,93 @@
   </section>
 
 
-  <!-- CTA -->
-  <section id="start" class="px-6 py-24">
+  <!-- contact us -->
+  <section id="contact" class="border-t border-white/10 bg-slate-900/50">
 
-    <div
-      class="mx-auto max-w-5xl overflow-hidden rounded-3xl border border-blue-500/20 bg-gradient-to-br from-blue-600/20 to-cyan-500/10 px-6 py-20 text-center">
+    <div class="mx-auto max-w-7xl px-6 py-24">
 
-      <h2 class="text-4xl font-bold sm:text-5xl">
-        Ready to build something?
-      </h2>
+      <div class="mx-auto max-w-2xl text-center">
+        <p class="font-semibold text-blue-400">HUBUNGI KAMI</p>
 
-      <p class="mx-auto mt-5 max-w-xl text-slate-400">
-        Start creating today and bring your next big idea to life.
-      </p>
+        <h2 class="mt-3 text-4xl font-bold tracking-tight sm:text-5xl">
+          Informasi Kontak
+        </h2>
 
-      <a href="#"
-        class="mt-8 inline-block rounded-xl bg-white px-7 py-3.5 font-semibold text-slate-950 transition hover:bg-slate-200">
-        Get Started →
-      </a>
+        <p class="mt-5 text-slate-400">
+          Hubungi kami melalui berbagai channel yang tersedia
+        </p>
+      </div>
+
+      <!-- Contact Grid -->
+    
+      <div class="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-2">
+
+        <!-- Email -->
+        <div class="flex flex-col items-center text-center">
+          <div class="flex h-8 w-8 items-center justify-center text-2xl">
+            ✉️
+          </div>
+          <h3 class="mt-3 text-sm font-semibold">Email</h3>
+          <p class="mt-2 text-slate-400 text-xs">
+            <a href="mailto:info@smp11tangerang.sch.id" class="hover:text-blue-400 transition">
+              info@smp11tangerang.sch.id
+            </a>
+          </p>
+        </div>
+
+        <!-- Telepon -->
+        <div class="flex flex-col items-center text-center">
+          <div class="flex h-8 w-8 items-center justify-center text-2xl">
+            📞
+          </div>
+          <h3 class="mt-3 text-sm font-semibold">Telepon</h3>
+          <p class="mt-2 text-slate-400 text-xs">
+            <a href="tel:+622155761234" class="hover:text-green-400 transition">
+              (021) 5576-1234
+            </a>
+          </p>
+        </div>
+
+        <!-- Fax -->
+        <div class="flex flex-col items-center text-center">
+          <div class="flex h-8 w-8 items-center justify-center text-2xl">
+            📠
+          </div>
+          <h3 class="mt-3 text-sm font-semibold">Fax</h3>
+          <p class="mt-2 text-slate-400 text-xs">
+            <a href="tel:+622155761235" class="hover:text-purple-400 transition">
+              (021) 5576-1235
+            </a>
+          </p>
+        </div>
+
+        <!-- Instagram -->
+        <div class="flex flex-col items-center text-center">
+          <div class="flex h-8 w-8 items-center justify-center text-2xl">
+            📷
+          </div>
+          <h3 class="mt-3 text-sm font-semibold">Instagram</h3>
+          <p class="mt-2 text-slate-400 text-xs">
+            <a href="https://instagram.com/smp11tangerang" target="_blank" class="hover:text-pink-400 transition">
+              @smp11tangerang
+            </a>
+          </p>
+        </div>
+
+        <!-- YouTube -->
+        <div class="flex flex-col items-center text-center sm:col-span-2 lg:col-span-2">
+          <div class="flex h-8 w-8 items-center justify-center text-2xl">
+            📺
+          </div>
+          <h3 class="mt-3 text-sm font-semibold">YouTube</h3>
+          <p class="mt-2 text-slate-400 text-xs">
+            <a href="https://youtube.com/@smp11tangerang" target="_blank" class="hover:text-red-400 transition">
+              SMP 11 Tangerang
+            </a>
+          </p>
+        </div>
+
+      </div>
 
     </div>
 
@@ -354,18 +485,279 @@
     <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-6 py-8 sm:flex-row">
 
       <p class="text-sm text-slate-500">
-        © 2026 NOVA. All rights reserved.
+        © 2026 rehanskibidih. All rights reserved.
       </p>
 
       <div class="flex gap-6 text-sm text-slate-500">
         <a href="#" class="hover:text-white">Privacy</a>
         <a href="#" class="hover:text-white">Terms</a>
-        <a href="#" class="hover:text-white">Contact</a>
+        <a href="#contact" class="hover:text-white">Contact</a>
       </div>
 
     </div>
 
   </footer>
+
+  <script>
+    // Carousel Logic - Infinite Loop with Responsive Design
+    const carouselWrapper = document.getElementById('carousel-wrapper');
+    const carouselPrev = document.getElementById('carousel-prev');
+    const carouselNext = document.getElementById('carousel-next');
+    const maxCards = 6;
+    let cardWidth;
+    let cardGap = 24; // gap-6 = 24px
+    let visibleCards;
+    let cardTotalWidth;
+    let currentPosition = 0;
+    let maxScroll;
+
+    function updateCarouselSettings() {
+      const isMobile = window.innerWidth < 768; // md breakpoint
+
+      if (isMobile) {
+        // Mobile: 1 card visible, full width
+        cardWidth = window.innerWidth - 48; // full width minus padding (px-6 = 24 on each side)
+        visibleCards = 1;
+      } else {
+        // Desktop: 3 cards visible
+        cardWidth = 320; // w-80 = 320px
+        visibleCards = 3;
+      }
+
+      cardTotalWidth = cardWidth + cardGap;
+      maxScroll = (maxCards - visibleCards) * cardTotalWidth;
+      currentPosition = 0;
+      carouselWrapper.style.transform = `translateX(0px)`;
+    }
+
+    carouselNext.addEventListener('click', () => {
+      currentPosition += cardTotalWidth;
+      if (currentPosition > maxScroll) {
+        currentPosition = 0;
+      }
+      carouselWrapper.style.transform = `translateX(-${currentPosition}px)`;
+    });
+
+    carouselPrev.addEventListener('click', () => {
+      currentPosition -= cardTotalWidth;
+      if (currentPosition < 0) {
+        currentPosition = maxScroll;
+      }
+      carouselWrapper.style.transform = `translateX(-${currentPosition}px)`;
+    });
+
+    // Update on resize
+    window.addEventListener('resize', updateCarouselSettings);
+
+    // Initialize
+    updateCarouselSettings();
+
+    // Touch/Swipe Support
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    carouselWrapper.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+    }, false);
+
+    carouselWrapper.addEventListener('touchend', (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      handleSwipe();
+    }, false);
+
+    function handleSwipe() {
+      const swipeThreshold = 50; // minimum distance for swipe
+      const diff = touchStartX - touchEndX;
+
+      if (Math.abs(diff) > swipeThreshold) {
+        // Remove animation for swipe
+        carouselWrapper.style.transition = 'none';
+
+        if (diff > 0) {
+          // Swiped left - go to next
+          currentPosition += cardTotalWidth;
+          if (currentPosition > maxScroll) {
+            currentPosition = 0;
+          }
+        } else {
+          // Swiped right - go to prev
+          currentPosition -= cardTotalWidth;
+          if (currentPosition < 0) {
+            currentPosition = maxScroll;
+          }
+        }
+
+        carouselWrapper.style.transform = `translateX(-${currentPosition}px)`;
+
+        // Restore animation
+        setTimeout(() => {
+          carouselWrapper.style.transition = 'transform 500ms ease-out';
+        }, 50);
+      }
+    }
+
+    // Ekskul Carousel Logic
+    const ekskuls = [
+      {
+        title: "🏀 Basket",
+        image: "img/placeholder-basket.jfif",
+        desc: "Ekstrakurikuler Basket di SMP Negeri 11 Tangerang adalah program yang dirancang untuk mengembangkan keterampilan bermain basket siswa. Program ini mencakup latihan teknik dasar, strategi permainan, dan pengembangan fisik.",
+        achievements: [
+          "Prestasi tingkat kabupaten",
+          "Prestasi tingkat provinsi",
+          "Prestasi tingkat nasional"
+        ]
+      },
+      {
+        title: "🥋 Taekwondo",
+        image: "img/placeholder-tekondo.jfif",
+        desc: "Program Taekwondo untuk siswa yang ingin belajar seni bela diri tradisional Korea. Fokus pada teknik, disiplin, dan pengembangan karakter yang kuat melalui latihan intensif.",
+        achievements: [
+          "Juara tingkat kabupaten",
+          "Peserta tingkat provinsi",
+          "Mengedukasi self-defense"
+        ]
+      },
+      {
+        title: "💃 Tari",
+        image: "img/placeholder-tari.jfif",
+        desc: "Ekstrakurikuler Tari mengajarkan berbagai jenis tari tradisional dan modern. Siswa belajar tentang seni budaya sambil mengembangkan kemampuan artistik dan ekspresi diri.",
+        achievements: [
+          "Juara lomba tari tingkat kota",
+          "Penampilan di festival budaya",
+          "Melestarikan budaya lokal"
+        ]
+      },
+      {
+        title: "⚽ Futsal",
+        image: "img/placeholder-futsal.jfif",
+        desc: "Program futsal yang mengembangkan kemampuan teknik bermain futsal, kerja sama tim, dan strategi pertandingan. Siswa dilatih oleh pelatih berpengalaman dengan metode modern.",
+        achievements: [
+          "Juara turnamen antar sekolah",
+          "Runner-up tingkat kabupaten",
+          "Mengembangkan sportivitas"
+        ]
+      },
+      {
+        title: "🏕️ Pramuka",
+        image: "img/placeholder-pramuka.jpg",
+        desc: "Pramuka adalah program pembinaan karakter yang mengajarkan kepemimpinan, kemandirian, dan tanggung jawab sosial. Kegiatan mencakup outdoor adventure dan community service.",
+        achievements: [
+          "Program kepemimpinan terdepan",
+          "Kegiatan sosial masyarakat",
+          "Pengembangan karakter holistik"
+        ]
+      },
+      {
+        title: "🗣️ English Club",
+        image: "img/placeholder-english.jfif",
+        desc: "English Club adalah tempat bagi siswa untuk meningkatkan kemampuan bahasa Inggris melalui diskusi, games, dan presentasi. Fokus pada komunikasi dan kepercayaan diri.",
+        achievements: [
+          "Kompetisi speaking tingkat kabupaten",
+          "Workshop dengan native speaker",
+          "Meningkatkan TOEFL score"
+        ]
+      }
+    ];
+
+    let currentEkskul = 0;
+
+    // Elements di luar kotak (sebelah kiri - yang berubah)
+    const infoTitle = document.getElementById('info-title');
+    const infoDesc = document.getElementById('info-desc');
+    const infoAchievements = document.getElementById('info-achievements');
+
+    // Elements di dalam kotak (sebelah kanan - hanya foto dan nama)
+    const ekskulImage = document.getElementById('ekskul-image');
+    const ekskulTitle = document.getElementById('ekskul-title');
+    const ekskulProgress = document.getElementById('ekskul-progress');
+
+    const ekskulPrev = document.getElementById('ekskul-prev');
+    const ekskulNext = document.getElementById('ekskul-next');
+
+    function updateEkskul(index) {
+      const ekskul = ekskuls[index];
+
+      // Update info di luar kotak (kiri)
+      infoTitle.textContent = ekskul.title;
+      infoDesc.textContent = ekskul.desc;
+
+      // Update foto dan nama di dalam kotak (kanan)
+      ekskulImage.src = ekskul.image;
+      ekskulTitle.textContent = ekskul.title;
+
+      // Update progress bar
+      const progressPercent = ((index + 1) / ekskuls.length) * 100;
+      ekskulProgress.style.width = progressPercent + '%';
+
+      // Update achievements di luar kotak (kiri)
+      infoAchievements.innerHTML = '';
+      ekskul.achievements.forEach(achievement => {
+        const div = document.createElement('div');
+        div.className = 'flex items-center gap-3';
+        div.innerHTML = `
+          <span class="text-green-400">✓</span>
+          <span class="text-slate-300">${achievement}</span>
+        `;
+        infoAchievements.appendChild(div);
+      });
+    }
+
+    ekskulNext.addEventListener('click', () => {
+      currentEkskul = (currentEkskul + 1) % ekskuls.length;
+      updateEkskul(currentEkskul);
+    });
+
+    ekskulPrev.addEventListener('click', () => {
+      currentEkskul = (currentEkskul - 1 + ekskuls.length) % ekskuls.length;
+      updateEkskul(currentEkskul);
+    });
+
+    // Initialize with first ekskul
+    updateEkskul(0);
+
+    // Touch/Swipe Support for Ekskul
+    let ekskulTouchStartX = 0;
+    let ekskulTouchEndX = 0;
+
+    ekskulContainer = document.getElementById('ekskul-container');
+    ekskulContainer.addEventListener('touchstart', (e) => {
+      ekskulTouchStartX = e.changedTouches[0].screenX;
+    }, false);
+
+    ekskulContainer.addEventListener('touchend', (e) => {
+      ekskulTouchEndX = e.changedTouches[0].screenX;
+      handleEkskulSwipe();
+    }, false);
+
+    function handleEkskulSwipe() {
+      const swipeThreshold = 50;
+      const diff = ekskulTouchStartX - ekskulTouchEndX;
+      const isMobile = window.innerWidth < 768;
+
+      if (Math.abs(diff) > swipeThreshold) {
+        if (diff > 0) {
+          // Swiped left - go to next
+          currentEkskul = (currentEkskul + 1) % ekskuls.length;
+        } else {
+          // Swiped right - go to prev
+          currentEkskul = (currentEkskul - 1 + ekskuls.length) % ekskuls.length;
+        }
+
+        // Mobile: instant change, Desktop: with fade animation
+        if (!isMobile) {
+          ekskulContainer.style.transition = 'opacity 200ms ease-out';
+          ekskulContainer.style.opacity = '0.7';
+          updateEkskul(currentEkskul);
+          setTimeout(() => {
+            ekskulContainer.style.opacity = '1';
+          }, 100);
+        } else {
+          updateEkskul(currentEkskul);
+        }
+      }
+    }
+  </script>
 
 </body>
 

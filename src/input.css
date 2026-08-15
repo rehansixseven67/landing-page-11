@@ -3,3 +3,27 @@
 html {
     scroll-behavior: smooth;
 }
+
+/* Carousel Styles */
+#carousel-wrapper {
+    display: flex;
+    gap: 1.5rem;
+}
+
+#carousel-container {
+    overflow: hidden;
+    padding: 0 1rem;
+}
+
+.carousel-card {
+    flex-shrink: 0;
+    width: 20rem;
+}
+
+/* Arrow Button Hover Effects */
+#carousel-prev,
+#carousel-next {
+    transition: all 0.3s ease;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
